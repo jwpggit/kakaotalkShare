@@ -10,17 +10,16 @@
 <body>
 
 <div>
-  <button
-    class="navermap width_38 height_38 border-radius_12"
-    onclick="shareKakaotalk()"
-  >
-    카카오톡 공유하기
-  </button>
+  <button id="kakaoShareButton">카카오톡 공유하기</button>
 </div>
 
 <script>
   Kakao.init('8b06ea585fd4f917dddee9720fb22765');
-
+  
+document.getElementById('kakaoShareButton').addEventListener('click', function() {
+    shareKakaotalk();
+  });
+  
 function shareKakaotalk() {
   // Kakao Link 전송할 데이터 설정
   const data = {
