@@ -14,7 +14,7 @@
     class="navermap width_38 height_38 border-radius_12"
     onclick="shareKakaotalk()"
   >
-    카카오톡 공유
+    카카오톡 공유하기
   </button>
 </div>
 
@@ -26,11 +26,11 @@ function shareKakaotalk() {
   const data = {
     templateId: 98536, // 사용자 정의 템플릿 ID (Kakao Developers에서 생성해야 함)
     templateArgs: {
-      title: '제목바보',
-      description: '내용은 멍청이',
-      imageUrl: 'https://searchad-phinf.pstatic.net/MjAyMzAxMzFfMTM3/MDAxNjc1MTQ3NzYyMzA1.3L83VU1Pz0mtM7uaV8S7HORk4GRHiDFMo_D6jteqeyMg.eDLFtd2YxRpew8hnVRDp0nFRi_KrX9MT8hznobxZdpMg.PNG/2780591-e8dce96f-1041-42bf-b964-4d149163a23c.png?type=f160_160',
+      title: '제목 테스트 ( 제목값은 고정 ).',
+      description: '내용 테스트 ( 텍스트값은 고정 )',
+      imageUrl: 'https://img1.daumcdn.net/thumb/R1280x0.fjpg/?fname=http://t1.daumcdn.net/brunch/service/user/dLK2/image/lF5wkeN8WbcGcZu6jOpXbwd0yRw',
       url: window.location.href,
-      shareButton: '공유하기란다',
+      shareButton: '공유하기',
     },
   };
 
